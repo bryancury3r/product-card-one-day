@@ -28,7 +28,17 @@ body {
   top: 15px;
 }
 
-.cart-card {
+.card-cart {
   left: unset;
   right: 20px;
+}
+
+.card-img {
+  width: 90%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
