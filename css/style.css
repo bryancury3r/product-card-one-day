@@ -20,7 +20,7 @@ body {
   width: 320px;
   height: 400px;
   background: #272d40;
-  padding-top: 20px;
+  padding: 20px;
   border-radius: 15px;
   color: #fff;
   position: relative;
@@ -55,4 +55,38 @@ body {
   text-align: center;
 }
 
+.card-title {
+  color: var(--primary-color);
+}
 
+.card-size, .card-color {
+  display: flex;
+  align-items: center;
+
+}
+
+.card-size span {
+  padding: 1px 5px;
+  background: #dadada;
+  color: black;
+  border-radius: 5px;
+  margin: 0 2px;
+}
+
+.card-color span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.card-color--green {
+  background: green;
+}
+
+.card-color--red {
+  background: red;
+}
+
+.card-color--black {
+  background: black;
+}
