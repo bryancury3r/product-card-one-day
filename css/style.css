@@ -109,5 +109,16 @@ body {
 }
 
 .card:hover .card-title, .card:hover .card-price {
-  transform: translate(-38px, -70px);
+  transform: translate(-38px, -72px);
 }
+
+.card:hover .card-price {
+  transform: translate(-117px, -72px);
+}
+
+.card-size, .card-color, .card-action {
+  margin-top: 150px;
+  visibility: hidden;
+  opacity: 0;
+}
+
