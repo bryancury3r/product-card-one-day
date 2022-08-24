@@ -32,6 +32,7 @@ body {
   position: absolute;
   left: 20px;
   top: 15px;
+  cursor: pointer;
 }
 
 .card-cart {
@@ -54,6 +55,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  transition: 0.5s;
 }
 
 .card-title {
@@ -102,6 +104,13 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
+  margin-right: 10px;
+  transition: 0.5s;
+  curso: pointer;
+}
+
+.card-action button:hover {
+  transform: scale(0.9);
 }
 
 .card:hover .card-img {
@@ -116,9 +125,24 @@ body {
   transform: translate(-117px, -72px);
 }
 
-.card-size, .card-color, .card-action {
+.card-size {
   margin-top: 150px;
-  visibility: hidden;
-  opacity: 0;
 }
 
+.card-size, .card-color, .card-action {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+}
+
+.card:hover .card-size,
+.card:hover .card-color,
+.card:hover .card-action {
+  visibility: visible;
+  opacity: 100;
+}
+
+.card:hover .card-size {
+  margin-top: -38px;
+}
